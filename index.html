@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Flowbite -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Wildventure</title>
+  </head>
+  <body class="font-[Poppins]">
+    <nav
+      id="mainNavbar"
+      class="bg-transparent z-50 fixed w-full transition-transform duration-300"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-1 sm:px-4"
+      >
+        <a href="" class="flex items-center">
+          <img
+            src="assets/images/OIG-removebg-preview.png"
+            class="h-[45px]"
+            alt="Wildventure Logo"
+          />
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap text-white"
+            >Wildventure</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-3 rounded-xl bg-white md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-white bg-[#23739e] hover:bg-[#1e6388] md:hover:bg-transparent md:hover:text-gray-600 rounded md:bg-transparent md:text-white md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#explore"
+                class="block py-2 pl-3 pr-4 text-gray-900 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0"
+                >Explore</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0"
+                >Check Order</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="hero min-h-screen"
+      style="
+        background-image: url(assets/images/wooden-bridge-koh-nangyuan-island-surat-thani-thailand.jpg);
+      "
+    >
+      <div class="hero-overlay bg-opacity-0 xl:bg-opacity-10"></div>
+      <div class="hero-content self-end text-center text-white mb-[5rem]">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-2xl font-bold">
+            Planning your next journey with us!
+          </h1>
+          <button
+            class="h-[50px] btn-wide bg-[#23739e] hover:bg-[#1e6388] rounded-full text-white shadow-xl shadow-black/50 normal-case font-semibold"
+          >
+            <a href="#explore">Travel Now!</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container xl:mx-[20rem]">
+      <div id="explore" class="my-5 md:my-10 md:ml-8">
+        <h1 class="my-2 px-4 font-semibold text-xl">
+          Noteworthy vacation ideas! 🗺️📌
+        </h1>
+        <p class="font-normal px-4 my-2">
+          Vacation inspiration plus recommendations for tickets, stays,
+          transports, and other info for you.
+        </p>
+
+        <div
+          class="flex overflow-x-auto overscroll-contain overflow-y-hidden md:w-[45rem] xl:w-[75rem] gap-5 mx-5 my-5"
+        >
+          <div
+            class="rounded-b-md flex-none w-48 md:w-56 bg-base-100 shadow-xl cursor-pointer"
+            onclick="window.location='jakarta-bali.html';"
+          >
+            <figure>
+              <img
+                src="assets/images/bali-pagoda-sunrise-indonesia.jpg"
+                alt="Shoes"
+                class="rounded-t-md"
+              />
+            </figure>
+            <div class="h-40 font-firacode">
+              <h2 class="px-1 font-semibold pt-3 mx-2">Jakarta -> Bali</h2>
+              <p class="px-3 py-1 font-light text-sm">20 Nov 2023</p>
+              <p class="px-3 font-light text-sm">Sriwijaya Air</p>
+              <p class="px-3 font-light text-sm">Economy Class</p>
+              <p class="px-3 py-5 font-medium text-sm text-red-500">
+                IDR 550,000
+              </p>
+            </div>
+          </div>
+          <div
+            class="rounded-b-md flex-none w-48 md:w-56 bg-base-100 shadow-xl cursor-pointer"
+            onclick="window.location='jakarta-jepang.html';"
+          >
+            <figure>
+              <img
+                src="assets/images/cherry-blossoms-spring-chureito-pagoda-fuji-mountain-japan.jpg"
+                alt="Shoes"
+                class="rounded-t-md"
+              />
+            </figure>
+            <div class="h-40 font-firacode">
+              <h2 class="px-1 font-semibold pt-3 mx-2">Jakarta -> Japan</h2>
+              <p class="px-3 py-1 font-light text-sm">20 Nov 2023</p>
+              <p class="px-3 font-light text-sm">Air Asia</p>
+              <p class="px-3 font-light text-sm">Economy Class</p>
+              <p class="px-3 py-5 font-medium text-sm text-red-500">
+                IDR 2,500,000
+              </p>
+            </div>
+          </div>
+          <div
+            class="rounded-b-md flex-none w-48 md:w-56 bg-base-100 shadow-xl cursor-pointer"
+            onclick="window.location='jakarta-singapura.html';"
+          >
+            <figure>
+              <img
+                src="assets/images/merlion-statue-cityscape-singapore.jpg"
+                alt="Shoes"
+                class="rounded-t-md"
+              />
+            </figure>
+            <div class="h-40 font-firacode">
+              <h2 class="font-semibold pt-3 mx-2">Jakarta -> Singapore</h2>
+              <p class="px-3 py-1 font-light text-sm">20 Nov 2023</p>
+              <p class="px-3 font-light text-sm">Batik Air</p>
+              <p class="px-3 font-light text-sm">Economy Class</p>
+              <p class="px-3 py-5 font-medium text-sm text-red-500">
+                IDR 1,050,000
+              </p>
+            </div>
+          </div>
+          <div
+            class="rounded-b-md flex-none w-48 md:w-56 bg-base-100 shadow-xl cursor-pointer"
+            onclick="window.location='jakarta-bali.html';"
+          >
+            <figure>
+              <img
+                src="assets/images/bali-pagoda-sunrise-indonesia.jpg"
+                alt="Shoes"
+                class="rounded-t-md"
+              />
+            </figure>
+            <div class="h-40 font-firacode">
+              <h2 class="px-1 font-semibold pt-3 mx-2">Jakarta -> Bali</h2>
+              <p class="px-3 py-1 font-light text-sm">20 Nov 2023</p>
+              <p class="px-3 font-light text-sm">Sriwijaya Air</p>
+              <p class="px-3 font-light text-sm">Economy Class</p>
+              <p class="px-3 py-5 font-medium text-sm text-red-500">
+                IDR 550,000
+              </p>
+            </div>
+          </div>
+          <div
+            class="rounded-b-md flex-none w-48 md:w-56 bg-base-100 shadow-xl cursor-pointer"
+            onclick="window.location='jakarta-jepang.html';"
+          >
+            <figure>
+              <img
+                src="assets/images/cherry-blossoms-spring-chureito-pagoda-fuji-mountain-japan.jpg"
+                alt="Shoes"
+                class="rounded-t-md"
+              />
+            </figure>
+            <div class="h-40 font-firacode">
+              <h2 class="px-1 font-semibold pt-3 mx-2">Jakarta -> Japan</h2>
+              <p class="px-3 py-1 font-light text-sm">20 Nov 2023</p>
+              <p class="px-3 font-light text-sm">Air Asia</p>
+              <p class="px-3 font-light text-sm">Economy Class</p>
+              <p class="px-3 py-5 font-medium text-sm text-red-500">
+                IDR 2,500,000
+              </p>
+            </div>
+          </div>
+          <div
+            class="rounded-b-md flex-none w-48 md:w-56 bg-base-100 shadow-xl cursor-pointer"
+            onclick="window.location='jakarta-singapura.html';"
+          >
+            <figure>
+              <img
+                src="assets/images/merlion-statue-cityscape-singapore.jpg"
+                alt="Shoes"
+                class="rounded-t-md"
+              />
+            </figure>
+            <div class="h-40 font-firacode">
+              <h2 class="font-semibold pt-3 mx-2">Jakarta -> Singapore</h2>
+              <p class="px-3 py-1 font-light text-sm">20 Nov 2023</p>
+              <p class="px-3 font-light text-sm">Batik Air</p>
+              <p class="px-3 font-light text-sm">Economy Class</p>
+              <p class="px-3 py-5 font-medium text-sm text-red-500">
+                IDR 1,050,000
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <hr class="mb-1" />
+    <footer class="bg-white dark:bg-gray-900">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="#home" class="flex items-center">
+              <img
+                src="assets/images/OIG-removebg-preview.png"
+                class="h-12 mr-3"
+                alt="FlowBite Logo"
+              />
+              <span
+                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+                >Wildventure</span
+              >
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Resources
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="https://flowbite.com/" class="hover:underline"
+                    >Flowbite</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="https://daisyui.com/" class="hover:underline"
+                    >DaisyUI</a
+                  >
+                </li>
+                <li>
+                  <a href="https://tailwindcss.com/" class="hover:underline"
+                    >Tailwind CSS</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Follow us
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a
+                    href="https://github.com/themesberg/flowbite"
+                    class="hover:underline"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://github.com/themesberg/flowbite"
+                    class="hover:underline"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://discord.gg/4eeurUVvTy"
+                    class="hover:underline"
+                    >X</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Legal
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+            >© 2023 <a href="#home" class="hover:underline">Wildventure</a>. All
+            Rights Reserved.
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Flowbite -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+      let lastScroll = 0;
+      const navbar = document.getElementById("mainNavbar");
+
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.scrollY;
+
+        if (currentScroll > lastScroll) {
+          // Scroll down
+          navbar.classList.add("nav-hidden");
+        } else {
+          // Scroll up
+          navbar.classList.remove("nav-hidden");
+        }
+
+        lastScroll = currentScroll;
+      });
+    </script>
+  </body>
+</html>
